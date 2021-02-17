@@ -50,7 +50,6 @@ class AuthService {
 	public async login(login: string, password: string): Promise<IBaseResponse> {
 		try {
 			const config: ExtendedAxiosRequestConfig = {data: {phone: login, password: password}, authorized: false}
-			// const result: IBaseResponse = await httpClient.POST('/api/auth', {payload: {phone: login, password: password}});
 			const result: IBaseResponse = await httpClient.POST('/api/auth', config);
 			if (!result.success) {
 				return {success: false} as IBaseResponse;

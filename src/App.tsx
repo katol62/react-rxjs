@@ -2,8 +2,6 @@ import React, {useEffect} from 'react';
 import './App.css';
 import {useAuthState} from "./store/hooks";
 import {authService} from "./store/authService";
-import {IBaseResponse} from "./interfaces";
-import any = jasmine.any;
 
 function App() {
 
